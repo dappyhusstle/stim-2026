@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Benefit Resource Directory</title>
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.5;
+        }
+
+        /* CONTAINER (Mobile Optimized) */
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        /* HEADER */
+        header {
+            background-color: #1e3a8a; /* Trust Blue */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #dcfce7;
+            color: #166534;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 26px;
+            line-height: 1.2;
+            color: #111827;
+            margin-bottom: 15px;
+        }
+
+        .subheadline {
+            font-size: 16px;
+            color: #4b5563;
+            margin-bottom: 25px;
+        }
+
+        /* CTA BUTTON */
+        .btn-main {
+            display: block;
+            width: 100%;
+            background-color: #ea580c; /* Urgent Orange */
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(234, 88, 12, 0.3);
+            transition: transform 0.1s;
+            animation: pulse 2s infinite;
+        }
+
+        .btn-main:active {
+            transform: scale(0.98);
+        }
+
+        .safe-text {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        /* PROBLEM / SOLUTION */
+        .section {
+            padding: 30px 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #111827;
+            margin-bottom: 15px;
+        }
+
+        .benefit-list {
+            list-style: none;
+        }
+
+        .benefit-list li {
+            background-color: #f9fafb;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 4px solid #3b82f6;
+            font-size: 15px;
+        }
+
+        .benefit-list li strong {
+            color: #1e3a8a;
+        }
+
+        /* CHECKLIST */
+        .checklist-box {
+            background-color: #eff6ff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .check-icon {
+            color: #2563eb;
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* SOCIAL PROOF */
+        .testimonial {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 14px;
+        }
+        
+        .testimonial-author {
+            margin-top: 8px;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 13px;
+            color: #4b5563;
+            text-align: right;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #9ca3af;
+            background-color: #111827;
+        }
+
+        footer a {
+            color: #9ca3af;
+            text-decoration: underline;
+        }
+
+        /* ANIMATION */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(234, 88, 12, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0); }
+        }
+
+        .urgent-box {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #991b1b;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <header>
+        🏛️ ResourceDirectory USA
+    </header>
+
+    <div class="hero">
+        <span class="status-badge">● Updated for 2026</span>
+        <h1>Living with a Medical Condition?</h1>
+        <p class="subheadline">You may qualify for more than just standard disability benefits. Check eligibility for <strong>Housing, Utility, and Grocery allowances</strong> in your area.</p>
+        
+        <a href="https://glctrk.org/aff_c?offer_id=2499&aff_id=23543&source=stim%202026" class="btn-main">
+            CHECK ELIGIBILITY (FREE) &raquo;
+        </a>
+        
+        <div class="safe-text">
+            <span>🔒 Secure 256-bit SSL</span>
+            <span>•</span>
+            <span>No SSN Required</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Disability Checks Often Aren't Enough</h2>
+        <p style="margin-bottom: 15px; font-size: 15px;">With rising costs, many Americans miss out on secondary assistance programs specifically for households with medical needs.</p>
+        
+        <ul class="benefit-list">
+            <li><strong>🏠 Housing Priority:</strong> Search for vouchers and rental assistance.</li>
+            <li><strong>💡 Utility Credits:</strong> Find programs to help pay heating & electric bills.</li>
+            <li><strong>🍞 Grocery Allowance:</strong> Assistance for healthy food and essentials.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Who Should Check?</h2>
+        <div class="checklist-box">
+            <p style="margin-bottom: 15px; font-weight: 600;">If you meet ONE of these criteria, check your status immediately:</p>
+            
+            <div class="check-item">
+                <span class="check-icon">✓</span>
+                <span>You have a diagnosed medical condition.</span>
+            </div>
+            <div class="check-item">
+                <span class="check-icon">✓</span>
+                <span>You are currently unable to work full-time.</span>
+            </div>
+            <div class="check-item">
+                <span class="check-icon">✓</span>
+                <span>You are applying for (or receiving) SSI/SSDI.</span>
+            </div>
+            <div class="check-item">
+                <span class="check-icon">✓</span>
+                <span>Household income is under $50k/year.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Success Stories</h2>
+        <div class="testimonial">
+            "I'm on a fixed income due to my back injury. I didn't know I qualified for utility help until I checked here. Now I save $180/month on electric bills."
+            <div class="testimonial-author">- Robert T., Ohio</div>
+        </div>
+        <div class="testimonial">
+            "Trying to survive on SSI is hard. This site helped me find a housing program I didn't know existed. It's a lifesaver."
+            <div class="testimonial-author">- Maria S., Florida</div>
+        </div>
+    </div>
+
+    <div class="section" style="background-color: #fff;">
+        <div class="urgent-box">
+            ⚠️ <strong>Notice:</strong> Funding availability varies by Zip Code and is often first-come, first-served.
+        </div>
+        <h2 style="text-align: center;">See What Is Available To You</h2>
+        <a href="https://glctrk.org/aff_c?offer_id=2499&aff_id=23543&source=stim%202026" class="btn-main">
+            SEARCH DIRECTORY NOW &raquo;
+        </a>
+    </div>
+
+    <footer>
+        <p>This website is a private referral service and is not affiliated with the Social Security Administration or any government agency.</p>
+        <br>
+        <p>&copy; 2026 ResourceDirectory. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
